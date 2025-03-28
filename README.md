@@ -19,14 +19,6 @@ Install the [VMware Workstation Player](https://www.vmware.com/hk/products/works
 
 Download the [Ubuntu 20.04 iso](https://ubuntu.com/download/desktop).
 
-After setting up the OS, you may want to connect a USB device, such as a drive you have data stored on. You can do this via the top-left tab, but by default all options are grayed out. To fix this, power down the VM, navigate to your VM (mine is in `Documents/Virtual Machines`), and open the .vmx file with a text editor. Delete the following line
-
-```bash
-usb.restrictions.defaultAllow = “FALSE”
-```
-
-Now reopen the VM through the VMware launcher, and USB devices should be selectable.
-
 ## Install dependencies
 
 ```bash
